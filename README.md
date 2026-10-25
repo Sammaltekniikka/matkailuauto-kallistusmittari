@@ -22,7 +22,7 @@ ESP32-pohjainen kallistusmittari matkailuautoon. Kaksi pyöreää näyttöä nä
 
 ## Kytkentäkaavio
 
-![Kytkentäkaavio](hardware/Kallistusmittarin%20kytkent%C3%A4kaavio%20retkeilyautoon_jodotuspohja.jpg)
+![Kytkentäkaavio](hardware/Kallistusmittarin%20kytkent%C3%A4kaavio%20retkeilyautoon_johdotuspohja.jpg)
 
 ## Kytkennät
 
