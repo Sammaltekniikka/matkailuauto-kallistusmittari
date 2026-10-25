@@ -1,0 +1,17 @@
+Autokuvien lähdetiedostot ja kehysten generointi
+
+side.svg    matkailuauto sivulta (pituuskallistus)
+rear.svg    matkailuauto takaa (sivukallistus)
+frame.html  yhden kehyksen pohja (tausta, asteikko, auto)
+gen.js      renderöi 2 x 61 kehystä PNG-kuviksi (vaatii Node.js + Playwright)
+tojpg.py    muuntaa PNG:t JPEG:ksi ja tekee frames_pitch.h / frames_roll.h (vaatii Python + Pillow)
+
+Käyttö:
+  npm install playwright && npx playwright install chromium
+  pip install pillow
+  mkdir png out
+  node gen.js <täysi polku>/png
+  python tojpg.py png out
+  -> kopioi out/frames_pitch.h ja out/frames_roll.h sketsikansioon
+
+Värejä tai automallia voi muuttaa muokkaamalla SVG-tiedostoja (esim. Inkscapella).

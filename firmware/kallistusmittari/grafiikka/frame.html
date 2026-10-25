@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;padding:0;background:#0b0f14}
+#f{width:240px;height:160px;position:relative;overflow:hidden;
+ background:radial-gradient(ellipse 120px 70px at 120px 92px,#1c2530 0%,#141b23 45%,#0b0f14 100%)}
+.car{position:absolute;left:50%;top:132px;transform-origin:50% 100%}
+svg.scale{position:absolute;left:0;top:0}
+</style></head><body><div id="f"></div>
+<script>
+function build(img,w,h,ang){
+ let t='';
+ for(let a=-60;a<=60;a+=5){const big=a%15==0;const r1=112,r2=big?98:104;const q=(a-90)*Math.PI/180;
+  t+=`<line x1="${120+r1*Math.cos(q)}" y1="${132+r1*Math.sin(q)}" x2="${120+r2*Math.cos(q)}" y2="${132+r2*Math.sin(q)}" stroke="${big?'#c8d3dd':'#56636f'}" stroke-width="${big?2.5:1.5}"/>`;}
+ t+=`<line x1="14" y1="132" x2="226" y2="132" stroke="#34404b" stroke-width="1.5"/>`;
+ document.getElementById('f').innerHTML=`<svg class="scale" width="240" height="160">${t}</svg>
+ <img class="car" src="${img}" width="${w}" height="${h}" style="margin-left:${-w/2}px;margin-top:${-h+6}px;transform:rotate(${ang}deg)">`;
+}
+</script></body></html>
