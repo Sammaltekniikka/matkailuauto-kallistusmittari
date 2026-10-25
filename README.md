@@ -2,7 +2,7 @@
 
 ESP32-pohjainen kallistusmittari matkailuautoon. Kaksi pyöreää näyttöä näyttävät auton kallistuksen pituus- ja leveyssuunnassa – auton kuva ja asteluku. Mittarin voi nollata painikkeella, ja nollaus tallentuu pysyvään muistiin, joten laite on siirrettävissä autosta toiseen ilman koodimuutoksia.
 
-> 🎬 Projektista on tehty kolmiosainen videosarja. Linkit lisätään tähän, kun osat julkaistaan.
+> 🎬 Projektista on tehty kolmiosainen videosarja. Videot löytyvät [SammalTekniikka-kanavalta](https://www.youtube.com/@sammaltekniikka).
 
 ## Ominaisuudet
 
@@ -81,8 +81,8 @@ docs/       Ohjeet ja kuvat
 
 ## Videot
 
-1. Osa 1 – _tulossa_
-2. Osa 2 – _tulossa_
+1. [Osa 1 – Rakennan kallistusmittarin retkeilyautoon ESP32:lla!](https://www.youtube.com/watch?v=94Pz2oVSIYc)
+2. [Osa 2 – Kallistusmittarin rakentaminen – komponenttien juottaminen!](https://www.youtube.com/watch?v=AogkXMNzD_4)
 3. Osa 3 – _tulossa_
 
 ## Tila
