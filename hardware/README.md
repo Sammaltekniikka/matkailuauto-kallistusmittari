@@ -1,6 +1,6 @@
 # Hardware
 
-![Kytkentäkaavio](Kallistusmittarin%20kytkent%C3%A4kaavio%20retkeilyautoon_jodotuspohja.jpg)
+![Kytkentäkaavio](Kallistusmittarin%20kytkent%C3%A4kaavio%20retkeilyautoon_johdotuspohja.jpg)
 
 Kytkennät taulukkomuodossa: [pää-README](../README.md#kytkennät).
 
