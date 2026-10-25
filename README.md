@@ -16,28 +16,54 @@ ESP32-pohjainen kallistusmittari matkailuautoon. Kaksi pyöreää näyttöä nä
 | Osa | Määrä | Huom. |
 |---|---|---|
 | ESP32 DevKit (CH340) | 1 | Pääohjain |
-| MPU6050 | 1 | Kiihtyvyysanturi/gyro, I2C |
+| MPU6050 (GY-521) | 1 | Kiihtyvyysanturi/gyro, I2C |
 | Waveshare 1.28inch LCD Module (GC9A01, 240×240) | 2 | Pyöreät näytöt, SPI |
-| Painike | 1 | Nollaus |
+| Painike (kaksinapainen) | 1 | Nollaus |
+
+## Kytkentäkaavio
+
+![Kytkentäkaavio](hardware/Kallistusmittarin%20kytkent%C3%A4kaavio%20retkeilyautoon_jodotuspohja.jpg)
 
 ## Kytkennät
 
-Näytöt jakavat SPI-väylän, ja kummallakin on oma CS-pinni. MPU6050 on I2C-väylässä.
+Näytöt jakavat SPI-väylän (DIN, CLK, DC, RST, BL), ja kummallakin on oma CS-pinni. MPU6050 on I2C-väylässä.
 
-| Signaali | ESP32 GPIO |
+### MPU6050 → ESP32 (I2C)
+
+| MPU6050 | ESP32 |
 |---|---|
-| MPU6050 SDA | _täydennä_ |
-| MPU6050 SCL | _täydennä_ |
-| Näyttö SCK (jaettu) | _täydennä_ |
-| Näyttö MOSI/DIN (jaettu) | _täydennä_ |
-| Näyttö DC (jaettu) | _täydennä_ |
-| Näyttö RST (jaettu) | _täydennä_ |
-| Näyttö BL (taustavalo) | GPIO32 |
-| Näyttö 1 CS (pituus) | _täydennä_ |
-| Näyttö 2 CS (sivu) | _täydennä_ |
-| Nollauspainike | _täydennä_ |
+| VCC | 3V3 |
+| GND | GND |
+| SCL | GPIO22 (D22) |
+| SDA | GPIO21 (D21) |
+| XDA, XCL, AD0, INT | Ei kytketä |
 
-Tarkempi kytkentäkaavio: [`hardware/`](hardware/)
+### Näytöt → ESP32 (yhteiset SPI-johdot)
+
+| Näyttö | ESP32 |
+|---|---|
+| VCC | 3V3 (molemmat näytöt) |
+| GND | GND (molemmat näytöt) |
+| DIN | GPIO23 (D23) |
+| CLK | GPIO18 (D18) |
+| DC | GPIO27 (D27) |
+| RST | GPIO26 (D26) |
+| BL | GPIO32 (D32) |
+| CS, näyttö 1 – pituuskallistus (pitch) | GPIO5 (D5) |
+| CS, näyttö 2 – leveyskallistus (roll) | GPIO17 (D17) |
+
+### Nollauspainike → ESP32
+
+| Painike | ESP32 |
+|---|---|
+| Liitin 1 | GPIO25 (D25) |
+| Liitin 2 | GND |
+
+### Virransyöttö
+
+- ESP32 saa virran USB:stä (5 V, tietokone tai USB-laturi).
+- Näytöt ja MPU6050 saavat virtansa ESP32:n 3,3 V:sta (kokonaisvirta noin 100 mA).
+- Kaikki GND:t ovat yhteisiä.
 
 ## Hakemistorakenne
 
