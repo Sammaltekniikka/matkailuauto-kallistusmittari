@@ -87,4 +87,4 @@ docs/       Ohjeet ja kuvat
 
 ## Tila
 
-Toimiva versio valmis. Idea valmiiksi lasketuista kuvista: [upir / pitch_roll_indicator](https://github.com/upiir/pitch_roll_indicator).
+Toimiva versio valmis.
