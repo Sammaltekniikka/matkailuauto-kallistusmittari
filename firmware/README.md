@@ -62,5 +62,3 @@ Koodin alussa:
 ## Autokuvien muokkaaminen
 
 Kuvat on piirretty SVG-muotoon (`grafiikka/side.svg` ja `grafiikka/rear.svg`). Kun niitä muokkaa, kehykset luodaan uudelleen työkaluilla – ohjeet: [`grafiikka/LUEMINUT.txt`](kallistusmittari/grafiikka/LUEMINUT.txt).
-
-Idea valmiiksi lasketuista kuvista on peräisin upirin [Pitch and Roll indicator](https://github.com/upiir/pitch_roll_indicator) -projektista.
