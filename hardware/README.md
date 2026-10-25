@@ -1,3 +1,7 @@
 # Hardware
 
-Tähän kansioon tulevat kytkentäkaavio, osaluettelo ja kotelon 3D-tiedostot.
+![Kytkentäkaavio](Kallistusmittarin%20kytkent%C3%A4kaavio%20retkeilyautoon_jodotuspohja.jpg)
+
+Kytkennät taulukkomuodossa: [pää-README](../README.md#kytkennät).
+
+Tähän kansioon tulevat myöhemmin myös osaluettelo ja kotelon 3D-tiedostot.
