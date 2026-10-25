@@ -7,7 +7,7 @@ ESP32-pohjainen kallistusmittari matkailuautoon. Kaksi pyöreää näyttöä nä
 ## Ominaisuudet
 
 - Pituuskallistus (pitch) ja sivukallistus (roll) omilla näytöillään
-- Auton kuva kallistuu kulman mukana + asteluku
+- Auton kuva kallistuu kulman mukana + asteluku (valmiiksi lasketut, pehmeäreunaiset kuvat)
 - Nollauspainike: auton "suora" asento tallennetaan pysyvään muistiin
 - Ei autokohtaisia asetuksia koodissa
 
@@ -68,7 +68,7 @@ Näytöt jakavat SPI-väylän (DIN, CLK, DC, RST, BL), ja kummallakin on oma CS-
 ## Hakemistorakenne
 
 ```
-firmware/   ESP32:n ohjelmakoodi
+firmware/   ESP32:n ohjelmakoodi ja autokuvat
 hardware/   Kytkentäkaavio, osaluettelo, kotelon tiedostot
 docs/       Ohjeet ja kuvat
 ```
@@ -76,7 +76,7 @@ docs/       Ohjeet ja kuvat
 ## Asennus
 
 1. Kytke osat yllä olevan taulukon mukaan.
-2. Avaa `firmware/` ja lataa koodi ESP32:lle (ohjeet: [`firmware/README.md`](firmware/README.md)).
+2. Lataa koodi `firmware/kallistusmittari/` ESP32:lle – kirjastot ja asetukset: [`firmware/README.md`](firmware/README.md).
 3. Asenna mittari autoon, pysäköi auto tasaiselle alustalle ja paina nollauspainiketta.
 
 ## Videot
@@ -87,4 +87,4 @@ docs/       Ohjeet ja kuvat
 
 ## Tila
 
-🚧 Kehitysvaiheessa – nykyinen versio on demo.
+Toimiva versio valmis. Idea valmiiksi lasketuista kuvista: [upir / pitch_roll_indicator](https://github.com/upiir/pitch_roll_indicator).
