@@ -10,7 +10,7 @@ ESP32-pohjainen kallistusmittari matkailuautoon. Kaksi pyöreää näyttöä nä
 - Auton kuva kallistuu kulman mukana + asteluku (valmiiksi lasketut, pehmeäreunaiset kuvat)
 - Nollauspainike: auton "suora" asento tallennetaan pysyvään muistiin
 - Ei autokohtaisia asetuksia koodissa
-
+- Samalla painikkeella lyhyellä painalluksella voidaan säätää näytön kirkkautta
 ## Komponentit
 
 | Osa | Määrä | Huom. |
