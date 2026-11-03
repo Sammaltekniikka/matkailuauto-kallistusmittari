@@ -83,8 +83,8 @@ docs/       Ohjeet ja kuvat
 
 1. [Osa 1 – Rakennan kallistusmittarin retkeilyautoon ESP32:lla!](https://www.youtube.com/watch?v=94Pz2oVSIYc)
 2. [Osa 2 – Kallistusmittarin rakentaminen – komponenttien juottaminen!](https://www.youtube.com/watch?v=AogkXMNzD_4)
-3. Osa 3 – _tulossa_
+3. [Osa 3 – Kallistusmittarin ohjelmointi ja grafiikat](https://www.youtube.com/watch?v=0C1fp9HLmEI)
 
 ## Tila
 
-Toimiva versio valmis.
+Toimiva versio valmis. Seuraavaksi: oma piirilevy (KiCad), 12 V -syöttö ja siistimpi johdotus.
